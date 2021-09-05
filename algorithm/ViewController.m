@@ -15,6 +15,16 @@
 #import "MJBinaryTrees.h"
 #import "BinarySearchTree.h"
 
+#import "SFBubbleSort.h"
+#import "SFSelectionSort.h"
+#import "SFInsertionSort.h"
+#import "SFMergeSort.h"
+#import "SFQuickSort.h"
+#import "SFShellSort.h"
+#import "SFHeapSort.h"
+#import "SFCountingSort.h"
+#import "SFRadixSort.h"
+
 @interface ViewController ()
 
 @end
@@ -24,7 +34,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self tree];
+    [self testSort];
+}
+- (void)testSort{
+    //获取一个邀请码
+//    static const char randomStr[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+//    NSString *str = @"";
+//    for (int i=0; i<6; i++) {
+//        char randowChar = randomStr[arc4random_uniform(36)];
+//        str = [NSString stringWithFormat:@"%@%c",str,randowChar];
+//    }
+//    NSLog(@"%@",str);
+    
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:10];
+    for (int i = 0; i < 20; i++) {
+        NSNumber *random = @(arc4random_uniform(1000));
+        [array addObject:random];
+    }
+    NSLog(@"排序前：%@",[array componentsJoinedByString:@","]);
+    SFCountingSort *sort1 = [SFCountingSort new];
+    NSTimeInterval time = [NSDate timeIntervalSinceReferenceDate];
+    NSArray *afterArray = [sort1 sortArray:array];
+    time = [NSDate timeIntervalSinceReferenceDate] - time;
+    NSLog(@"排序所消耗时间time = %f",time);
+    NSLog(@"排序后：%@",[afterArray componentsJoinedByString:@"_"]);
 }
 - (void)tree{
     NSString *testStr = @"861,526,39,297,607,274,307,587,914,142,640,129,640,869,961,664,503,568,180,321,426,794,231,318,636,251,587,705,179,805,372,630,420,797,751,623,469,138,268,52,606,36,650,571,952,135,201,791";

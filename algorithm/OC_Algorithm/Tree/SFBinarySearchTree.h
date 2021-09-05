@@ -6,14 +6,14 @@
 //
 
 #import "SFBinaryTree.h"
-#import "SFBSTComparator.h"
+#import "SFComparator.h"
 
-typedef int (^SFBSTComparatorBlock)(id _Nonnull e1, id _Nonnull e2);
+typedef int (^SFComparatorBlock)(id _Nonnull e1, id _Nonnull e2);
 
 @interface SFBinarySearchTree : SFBinaryTree
 
-+ (instancetype _Nonnull )treeWithComparatorBlock:(_Nullable SFBSTComparatorBlock)comparatorBlock;
-+ (instancetype _Nonnull )treeWithComparator:(_Nullable id<SFBSTComparator>)comparator;
++ (instancetype _Nonnull )treeWithComparatorBlock:(_Nullable SFComparatorBlock)comparatorBlock;
++ (instancetype _Nonnull )treeWithComparator:(_Nullable id<SFComparator>)comparator;
 
 - (void)addNode:(SFBinaryTreeNode *_Nonnull)node;
 - (void)removeNode:(SFBinaryTreeNode *_Nonnull)node;

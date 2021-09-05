@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BinarySearchTree : NSObject <MJBinaryTreeInfo>
 
 + (instancetype)tree;
-+ (instancetype)treeWithComparatorBlock:(_Nullable SFBSTComparatorBlock)comparatorBlock;
-+ (instancetype)treeWithComparator:(_Nullable id<SFBSTComparator>)comparator;
++ (instancetype)treeWithComparatorBlock:(_Nullable SFComparatorBlock)comparatorBlock;
++ (instancetype)treeWithComparator:(_Nullable id<SFComparator>)comparator;
 
 - (BOOL)isEmpty;
 - (void)clear;

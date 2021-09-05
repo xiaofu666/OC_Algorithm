@@ -18,12 +18,12 @@
 + (instancetype)tree{
     return [self treeWithComparator:nil];
 }
-+ (instancetype)treeWithComparatorBlock:(_Nullable SFBSTComparatorBlock)comparatorBlock{
++ (instancetype)treeWithComparatorBlock:(_Nullable SFComparatorBlock)comparatorBlock{
     BinarySearchTree *tree = [[self alloc] init];
     tree.searchTree = [SFAVLTree treeWithComparatorBlock:comparatorBlock];
     return tree;
 }
-+ (instancetype)treeWithComparator:(_Nullable id<SFBSTComparator>)comparator{
++ (instancetype)treeWithComparator:(_Nullable id<SFComparator>)comparator{
     BinarySearchTree *tree = [[self alloc] init];
     tree.searchTree = [SFAVLTree treeWithComparator:comparator];
     return tree;

@@ -9,19 +9,19 @@
 
 @interface SFBinarySearchTree ()
 
-@property (nonatomic, copy) SFBSTComparatorBlock comparatorBlock;
-@property (nonatomic, weak) id<SFBSTComparator> comparator;
+@property (nonatomic, copy) SFComparatorBlock comparatorBlock;
+@property (nonatomic, weak) id<SFComparator> comparator;
 
 @end
 
 @implementation SFBinarySearchTree
 
-+ (instancetype)treeWithComparatorBlock:(_Nullable SFBSTComparatorBlock)comparatorBlock{
++ (instancetype)treeWithComparatorBlock:(_Nullable SFComparatorBlock)comparatorBlock{
     SFBinarySearchTree *bst = [[self alloc] init];
     bst.comparatorBlock = comparatorBlock;
     return bst;
 }
-+ (instancetype)treeWithComparator:(_Nullable id<SFBSTComparator>)comparator{
++ (instancetype)treeWithComparator:(_Nullable id<SFComparator>)comparator{
     SFBinarySearchTree *bst = [[self alloc] init];
     bst.comparator = comparator;
     return bst;

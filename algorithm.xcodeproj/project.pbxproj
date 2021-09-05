@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74BF46926E3656C007DD5C1 /* SFSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF46826E3656C007DD5C1 /* SFSort.m */; };
+		E74BF46C26E37225007DD5C1 /* SFBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF46B26E37225007DD5C1 /* SFBubbleSort.m */; };
+		E74BF46F26E3839C007DD5C1 /* SFSelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF46E26E3839C007DD5C1 /* SFSelectionSort.m */; };
+		E74BF47226E38544007DD5C1 /* SFInsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF47126E38544007DD5C1 /* SFInsertionSort.m */; };
+		E74BF47526E395A1007DD5C1 /* SFMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF47426E395A1007DD5C1 /* SFMergeSort.m */; };
+		E74BF47826E3AAC5007DD5C1 /* SFQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF47726E3AAC5007DD5C1 /* SFQuickSort.m */; };
+		E74BF47B26E3BF2D007DD5C1 /* SFShellSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF47A26E3BF2D007DD5C1 /* SFShellSort.m */; };
+		E74BF47E26E4734F007DD5C1 /* SFHeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF47D26E4734F007DD5C1 /* SFHeapSort.m */; };
+		E74BF48126E475AF007DD5C1 /* SFCountingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF48026E475AF007DD5C1 /* SFCountingSort.m */; };
+		E74BF49926E49358007DD5C1 /* SFRadixSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF49826E49358007DD5C1 /* SFRadixSort.m */; };
 		E7E1E91E26E1F93D00D51139 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E91D26E1F93D00D51139 /* AppDelegate.m */; };
 		E7E1E92126E1F93D00D51139 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E92026E1F93D00D51139 /* SceneDelegate.m */; };
 		E7E1E92426E1F93D00D51139 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E92326E1F93D00D51139 /* ViewController.m */; };
@@ -33,6 +43,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74BF46726E3656C007DD5C1 /* SFSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSort.h; sourceTree = "<group>"; };
+		E74BF46826E3656C007DD5C1 /* SFSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSort.m; sourceTree = "<group>"; };
+		E74BF46A26E37225007DD5C1 /* SFBubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBubbleSort.h; sourceTree = "<group>"; };
+		E74BF46B26E37225007DD5C1 /* SFBubbleSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBubbleSort.m; sourceTree = "<group>"; };
+		E74BF46D26E3839C007DD5C1 /* SFSelectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSelectionSort.h; sourceTree = "<group>"; };
+		E74BF46E26E3839C007DD5C1 /* SFSelectionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSelectionSort.m; sourceTree = "<group>"; };
+		E74BF47026E38544007DD5C1 /* SFInsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFInsertionSort.h; sourceTree = "<group>"; };
+		E74BF47126E38544007DD5C1 /* SFInsertionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFInsertionSort.m; sourceTree = "<group>"; };
+		E74BF47326E395A1007DD5C1 /* SFMergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMergeSort.h; sourceTree = "<group>"; };
+		E74BF47426E395A1007DD5C1 /* SFMergeSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMergeSort.m; sourceTree = "<group>"; };
+		E74BF47626E3AAC5007DD5C1 /* SFQuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFQuickSort.h; sourceTree = "<group>"; };
+		E74BF47726E3AAC5007DD5C1 /* SFQuickSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFQuickSort.m; sourceTree = "<group>"; };
+		E74BF47926E3BF2D007DD5C1 /* SFShellSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFShellSort.h; sourceTree = "<group>"; };
+		E74BF47A26E3BF2D007DD5C1 /* SFShellSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFShellSort.m; sourceTree = "<group>"; };
+		E74BF47C26E4734E007DD5C1 /* SFHeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHeapSort.h; sourceTree = "<group>"; };
+		E74BF47D26E4734F007DD5C1 /* SFHeapSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHeapSort.m; sourceTree = "<group>"; };
+		E74BF47F26E475AF007DD5C1 /* SFCountingSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFCountingSort.h; sourceTree = "<group>"; };
+		E74BF48026E475AF007DD5C1 /* SFCountingSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFCountingSort.m; sourceTree = "<group>"; };
+		E74BF49726E49358007DD5C1 /* SFRadixSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFRadixSort.h; sourceTree = "<group>"; };
+		E74BF49826E49358007DD5C1 /* SFRadixSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFRadixSort.m; sourceTree = "<group>"; };
 		E7E1E91926E1F93D00D51139 /* algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E1E91C26E1F93D00D51139 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7E1E91D26E1F93D00D51139 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,7 +78,7 @@
 		E7E1E93726E1F96400D51139 /* SFBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBinaryTree.m; sourceTree = "<group>"; };
 		E7E1E93826E1F96400D51139 /* SFAVLTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFAVLTree.m; sourceTree = "<group>"; };
 		E7E1E93926E1F96400D51139 /* SFBinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBinarySearchTree.h; sourceTree = "<group>"; };
-		E7E1E93A26E1F96400D51139 /* SFBSTComparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBSTComparator.h; sourceTree = "<group>"; };
+		E7E1E93A26E1F96400D51139 /* SFComparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFComparator.h; sourceTree = "<group>"; };
 		E7E1E93B26E1F96400D51139 /* SFBinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBinaryTreeNode.m; sourceTree = "<group>"; };
 		E7E1E93C26E1F96400D51139 /* SFAVLTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFAVLTree.h; sourceTree = "<group>"; };
 		E7E1E93D26E1F96400D51139 /* SFBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBinaryTree.h; sourceTree = "<group>"; };
@@ -92,6 +122,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E74BF46626E36534007DD5C1 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				E74BF46726E3656C007DD5C1 /* SFSort.h */,
+				E74BF46826E3656C007DD5C1 /* SFSort.m */,
+				E74BF46A26E37225007DD5C1 /* SFBubbleSort.h */,
+				E74BF46B26E37225007DD5C1 /* SFBubbleSort.m */,
+				E74BF46D26E3839C007DD5C1 /* SFSelectionSort.h */,
+				E74BF46E26E3839C007DD5C1 /* SFSelectionSort.m */,
+				E74BF47026E38544007DD5C1 /* SFInsertionSort.h */,
+				E74BF47126E38544007DD5C1 /* SFInsertionSort.m */,
+				E74BF47326E395A1007DD5C1 /* SFMergeSort.h */,
+				E74BF47426E395A1007DD5C1 /* SFMergeSort.m */,
+				E74BF47626E3AAC5007DD5C1 /* SFQuickSort.h */,
+				E74BF47726E3AAC5007DD5C1 /* SFQuickSort.m */,
+				E74BF47926E3BF2D007DD5C1 /* SFShellSort.h */,
+				E74BF47A26E3BF2D007DD5C1 /* SFShellSort.m */,
+				E74BF47C26E4734E007DD5C1 /* SFHeapSort.h */,
+				E74BF47D26E4734F007DD5C1 /* SFHeapSort.m */,
+				E74BF47F26E475AF007DD5C1 /* SFCountingSort.h */,
+				E74BF48026E475AF007DD5C1 /* SFCountingSort.m */,
+				E74BF49726E49358007DD5C1 /* SFRadixSort.h */,
+				E74BF49826E49358007DD5C1 /* SFRadixSort.m */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
 		E7E1E91026E1F93D00D51139 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +190,7 @@
 		E7E1E93526E1F96400D51139 /* OC_Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				E74BF46626E36534007DD5C1 /* Sort */,
 				E7E1E93626E1F96400D51139 /* Tree */,
 				E7E1E94026E1F96400D51139 /* LinkedList */,
 				E7E1E94926E1F96400D51139 /* Queue */,
@@ -144,7 +202,7 @@
 		E7E1E93626E1F96400D51139 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
-				E7E1E93A26E1F96400D51139 /* SFBSTComparator.h */,
+				E7E1E93A26E1F96400D51139 /* SFComparator.h */,
 				E7E1E93F26E1F96400D51139 /* SFBinaryTreeNode.h */,
 				E7E1E93B26E1F96400D51139 /* SFBinaryTreeNode.m */,
 				E7E1E93D26E1F96400D51139 /* SFBinaryTree.h */,
@@ -285,26 +343,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74BF46F26E3839C007DD5C1 /* SFSelectionSort.m in Sources */,
 				E7E1E92426E1F93D00D51139 /* ViewController.m in Sources */,
 				E7E1E95826E1F96400D51139 /* SFStack.m in Sources */,
 				E7E1E95626E1F96400D51139 /* SFSingleLinkedList.m in Sources */,
+				E74BF47826E3AAC5007DD5C1 /* SFQuickSort.m in Sources */,
 				E7E1E95426E1F96400D51139 /* SFSingleCircleLinkedList.m in Sources */,
 				E7E1E96626E1F96C00D51139 /* MJInorderPrinter.m in Sources */,
 				E7E1E95526E1F96400D51139 /* SFTwowayCircleLinkedList.m in Sources */,
+				E74BF46926E3656C007DD5C1 /* SFSort.m in Sources */,
+				E74BF47226E38544007DD5C1 /* SFInsertionSort.m in Sources */,
 				E7E1E91E26E1F93D00D51139 /* AppDelegate.m in Sources */,
+				E74BF46C26E37225007DD5C1 /* SFBubbleSort.m in Sources */,
 				E7E1E95026E1F96400D51139 /* SFAVLTree.m in Sources */,
 				E7E1E96D26E1F97900D51139 /* BinarySearchTree.m in Sources */,
 				E7E1E95226E1F96400D51139 /* SFBinarySearchTree.m in Sources */,
+				E74BF48126E475AF007DD5C1 /* SFCountingSort.m in Sources */,
 				E7E1E94F26E1F96400D51139 /* SFBinaryTree.m in Sources */,
 				E7E1E96826E1F96C00D51139 /* MJPrinter.m in Sources */,
+				E74BF47B26E3BF2D007DD5C1 /* SFShellSort.m in Sources */,
 				E7E1E95326E1F96400D51139 /* SFTwowayLinkedList.m in Sources */,
 				E7E1E92F26E1F94500D51139 /* main.m in Sources */,
 				E7E1E92126E1F93D00D51139 /* SceneDelegate.m in Sources */,
 				E7E1E96A26E1F96C00D51139 /* NSString+Trees.m in Sources */,
 				E7E1E95126E1F96400D51139 /* SFBinaryTreeNode.m in Sources */,
 				E7E1E95726E1F96400D51139 /* SFQueue.m in Sources */,
+				E74BF49926E49358007DD5C1 /* SFRadixSort.m in Sources */,
 				E7E1E96726E1F96C00D51139 /* MJLevelOrderPrinter.m in Sources */,
 				E7E1E96926E1F96C00D51139 /* MJBinaryTrees.m in Sources */,
+				E74BF47E26E4734F007DD5C1 /* SFHeapSort.m in Sources */,
+				E74BF47526E395A1007DD5C1 /* SFMergeSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
