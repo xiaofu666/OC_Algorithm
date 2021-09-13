@@ -7,14 +7,14 @@
 
 #import <Foundation/Foundation.h>
 
-typedef int (^SFComparatorBlock)(id _Nonnull e1, id _Nonnull e2);
+typedef int (^SFComparatorBlock)(id _Nonnull obj1, id _Nonnull obj2);
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol SFComparator <NSObject>
 
 @required
-- (int)compare:(id)e1 another:(id)e2;
+- (int)compare:(id)obj1 another:(id)obj2;
 
 @end
 

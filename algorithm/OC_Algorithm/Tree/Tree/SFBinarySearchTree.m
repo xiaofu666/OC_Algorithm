@@ -55,8 +55,8 @@
         }
         node.parentNode = parentNode;
     }
-    [self addAfterNode:node];
     self.size++;
+    [self addAfterNode:node];
 }
 - (void)addAfterNode:(SFBinaryTreeNode *)node{
     
@@ -77,7 +77,7 @@
         } else {
             self.rootNode = replacement;
         }
-        [self removeAfterNode:node];
+        [self removeAfterNode:replacement];
     } else if (!node.parentNode) { // node是叶子节点并且是根节点
         self.rootNode = nil;
         [self removeAfterNode:node];

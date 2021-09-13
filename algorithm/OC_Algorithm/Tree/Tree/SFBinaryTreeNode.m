@@ -17,6 +17,7 @@
     SFBinaryTreeNode *node = [[self alloc] init];
     node.element = element;
     node.height = 1;
+    node.color = NO;
     return node;
 }
 - (void)updateHeight{
@@ -35,6 +36,16 @@
 }
 - (BOOL)isRightChild{
     return self==self.parentNode.rightNode;
+}
+//兄弟节点
+- (SFBinaryTreeNode *)siblingNode{
+    if ([self isLeftChild]) {
+        return self.parentNode.rightNode;
+    }
+    if ([self isRightChild]) {
+        return self.parentNode.leftNode;
+    }
+    return nil;
 }
 
 @end

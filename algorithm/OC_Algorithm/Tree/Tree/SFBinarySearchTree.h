@@ -8,8 +8,6 @@
 #import "SFBinaryTree.h"
 #import "SFComparator.h"
 
-typedef int (^SFComparatorBlock)(id _Nonnull e1, id _Nonnull e2);
-
 @interface SFBinarySearchTree : SFBinaryTree
 
 + (instancetype _Nonnull )treeWithComparatorBlock:(_Nullable SFComparatorBlock)comparatorBlock;

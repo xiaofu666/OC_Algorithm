@@ -9,7 +9,7 @@
 
 @interface BinarySearchTree ()
 
-@property (nonatomic, strong) SFAVLTree *searchTree;
+@property (nonatomic, strong) SFRedBlackTree *searchTree;
 
 @end
 
@@ -20,12 +20,12 @@
 }
 + (instancetype)treeWithComparatorBlock:(_Nullable SFComparatorBlock)comparatorBlock{
     BinarySearchTree *tree = [[self alloc] init];
-    tree.searchTree = [SFAVLTree treeWithComparatorBlock:comparatorBlock];
+    tree.searchTree = [SFRedBlackTree treeWithComparatorBlock:comparatorBlock];
     return tree;
 }
 + (instancetype)treeWithComparator:(_Nullable id<SFComparator>)comparator{
     BinarySearchTree *tree = [[self alloc] init];
-    tree.searchTree = [SFAVLTree treeWithComparator:comparator];
+    tree.searchTree = [SFRedBlackTree treeWithComparator:comparator];
     return tree;
 }
 
@@ -135,7 +135,7 @@
  * how to print the node
  */
 - (id)string:(SFBinaryTreeNode *)node{
-    return node.element;
+    return node.isColor?node.element:[NSString stringWithFormat:@"R_%@",node.element];
 }
 
 - (void)dealloc{

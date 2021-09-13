@@ -24,6 +24,7 @@
 #import "SFHeapSort.h"
 #import "SFCountingSort.h"
 #import "SFRadixSort.h"
+#import "SFBinaryHeap.h"
 
 @interface ViewController ()
 
@@ -34,7 +35,74 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self testSort];
+    [self tree];
+}
+- (void)tree{
+    NSString *testStr = @"57, 56, 40, 18, 83, 76, 4, 17, 22, 36, 84, 14, 52, 74, 54, 5, 92, 70, 53, 24, 81, 2, 61, 31, 55, 100, 38, 77, 42, 50, 93, 34, 59, 65, 99, 97";
+    NSMutableArray *numArray = [NSMutableArray arrayWithArray:[testStr componentsSeparatedByString:@","]];
+    BinarySearchTree *tree = [BinarySearchTree tree];
+    
+    for (int i = 0; i < 100; i++) {
+        NSNumber *random = @(arc4random_uniform(1000));
+        [tree addObject:random];
+        [numArray addObject:random];
+    }
+    
+//    for (int i = 0; i < numArray.count; i++) {
+//        NSString *str = numArray[i];
+//        [tree addObject:@(str.integerValue)];
+//    }
+    
+//    [tree addObject:@(31)];
+//    [tree removeObject:@(69)];
+    
+    [tree removeObject:@(70)];
+    [tree removeObject:@(36)];
+    [tree removeObject:@(81)];
+    [tree removeObject:@(40)];
+    
+    NSLog(@"numArray.count:%zd",[numArray count]);
+    printf("------------------------------------------------------------------\n");
+    [MJBinaryTrees println:tree];
+    printf("------------------------------------------------------------------\n");
+    
+    NSArray *itemArr = [tree inorderTraversalWithObject:nil];
+    NSLog(@"%@",[itemArr componentsJoinedByString:@","]);
+    
+//    NSLog(@"%@",[tree rootObject]);
+    
+//    [tree leftAndRightHeightWithObject:@(39)];
+    
+//    NSLog(@"%zd",[tree heightWithObject:@(43)]);
+//    NSLog(@"%zd",[tree heightWithObject:@(38)]);
+//    NSLog(@"%zd",[tree heightWithObject:@(29)]);
+//    NSLog(@"%zd",[tree heightWithObject:@(45)]);
+    
+//    [tree preorderTraversalWithObject:nil];
+//    [tree inorderTraversalWithObject:nil]
+//    [tree postorderTraversalWithObject:nil];
+//    [tree levelOrderTraversalWithObject:nil];
+//    [tree clear];
+}
+- (void)binaryHeap{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:10];
+    for (int i = 0; i < 20; i++) {
+        NSNumber *random = @(arc4random_uniform(1000));
+        [array addObject:random];
+    }
+    SFBinaryHeap *heap = [SFBinaryHeap heapWithArray:array ComparatorBlock:^int(NSNumber *e1, NSNumber *e2) {
+        return e2.integerValue-e1.integerValue;
+    }];
+    
+    printf("------------------------------------------------------------------\n");
+    [MJBinaryTrees println:heap style:MJPrintStyleInorder];
+    printf("------------------------------------------------------------------\n");
+    
+    [heap remove];
+    
+    printf("------------------------------------------------------------------\n");
+    [MJBinaryTrees println:heap style:MJPrintStyleInorder];
+    printf("------------------------------------------------------------------\n");
 }
 - (void)testSort{
     //获取一个邀请码
@@ -58,50 +126,6 @@
     time = [NSDate timeIntervalSinceReferenceDate] - time;
     NSLog(@"排序所消耗时间time = %f",time);
     NSLog(@"排序后：%@",[afterArray componentsJoinedByString:@"_"]);
-}
-- (void)tree{
-    NSString *testStr = @"861,526,39,297,607,274,307,587,914,142,640,129,640,869,961,664,503,568,180,321,426,794,231,318,636,251,587,705,179,805,372,630,420,797,751,623,469,138,268,52,606,36,650,571,952,135,201,791";
-    NSMutableArray *numArray = [NSMutableArray arrayWithArray:[testStr componentsSeparatedByString:@","]];
-    BinarySearchTree *tree = [BinarySearchTree tree];
-    
-//    for (int i = 0; i < 30; i++) {
-//        NSNumber *random = @(arc4random_uniform(1000));
-//        [tree addObject:random];
-//        [numArray addObject:random];
-//    }
-    
-    for (int i = 0; i < numArray.count; i++) {
-        NSString *str = numArray[i];
-        [tree addObject:@(str.integerValue)];
-    }
-    
-    [tree removeObject:@(321)];
-    
-//    [tree addObject:@(31)];
-//    [tree removeObject:@(69)];
-    NSLog(@"numArray.count:%zd",[numArray count]);
-    printf("------------------------------------------------------------------\n");
-    [MJBinaryTrees println:tree];
-    printf("------------------------------------------------------------------\n");
-    
-    NSArray *itemArr = [tree inorderTraversalWithObject:nil];
-    NSLog(@"%@",[itemArr componentsJoinedByString:@","]);
-
-//    [tree removeObject:@(38)];
-//    NSLog(@"%@",[tree rootObject]);
-    
-//    [tree leftAndRightHeightWithObject:@(39)];
-    
-//    NSLog(@"%zd",[tree heightWithObject:@(43)]);
-//    NSLog(@"%zd",[tree heightWithObject:@(38)]);
-//    NSLog(@"%zd",[tree heightWithObject:@(29)]);
-//    NSLog(@"%zd",[tree heightWithObject:@(45)]);
-    
-//    [tree preorderTraversalWithObject:nil];
-//    [tree inorderTraversalWithObject:nil]
-//    [tree postorderTraversalWithObject:nil];
-//    [tree levelOrderTraversalWithObject:nil];
-//    [tree clear];
 }
 - (void)twoWay{
     SFTwowayCircleLinkedList *list = [[SFTwowayCircleLinkedList alloc] init];

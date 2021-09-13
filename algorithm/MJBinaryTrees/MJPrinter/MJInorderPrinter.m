@@ -77,4 +77,5 @@ static NSString *lineAppend;
     [string deleteCharactersInRange:NSMakeRange(string.length - 1, 1)];
     return string;
 }
+
 @end

@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) SFBinaryTreeNode * _Nullable rightNode;
 @property (nonatomic, strong) SFBinaryTreeNode * _Nullable parentNode;
 @property (nonatomic, assign) NSInteger height;
+@property (nonatomic, assign, getter=isColor) BOOL color;
 
 + (instancetype)nodeWithElement:(id _Nonnull)element;
 - (void)updateHeight;//深度
@@ -23,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isRight:(SFBinaryTreeNode *)node;
 - (BOOL)isLeftChild;
 - (BOOL)isRightChild;
+//兄弟节点
+- (SFBinaryTreeNode *)siblingNode;
 
 @end
 

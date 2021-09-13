@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E743BC0726E5B8DF006DAF31 /* SFBinaryHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = E743BC0626E5B8DF006DAF31 /* SFBinaryHeap.m */; };
 		E74BF46926E3656C007DD5C1 /* SFSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF46826E3656C007DD5C1 /* SFSort.m */; };
 		E74BF46C26E37225007DD5C1 /* SFBubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF46B26E37225007DD5C1 /* SFBubbleSort.m */; };
 		E74BF46F26E3839C007DD5C1 /* SFSelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF46E26E3839C007DD5C1 /* SFSelectionSort.m */; };
@@ -17,8 +18,10 @@
 		E74BF47E26E4734F007DD5C1 /* SFHeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF47D26E4734F007DD5C1 /* SFHeapSort.m */; };
 		E74BF48126E475AF007DD5C1 /* SFCountingSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF48026E475AF007DD5C1 /* SFCountingSort.m */; };
 		E74BF49926E49358007DD5C1 /* SFRadixSort.m in Sources */ = {isa = PBXBuildFile; fileRef = E74BF49826E49358007DD5C1 /* SFRadixSort.m */; };
+		E7B37C7026E5CFCF00E4407B /* MJInorderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B37C6A26E5CFCF00E4407B /* MJInorderPrinter.m */; };
+		E7B37C7126E5CFD000E4407B /* MJLevelOrderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B37C6E26E5CFCF00E4407B /* MJLevelOrderPrinter.m */; };
+		E7B37C7226E5CFD000E4407B /* MJPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B37C6F26E5CFCF00E4407B /* MJPrinter.m */; };
 		E7E1E91E26E1F93D00D51139 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E91D26E1F93D00D51139 /* AppDelegate.m */; };
-		E7E1E92126E1F93D00D51139 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E92026E1F93D00D51139 /* SceneDelegate.m */; };
 		E7E1E92426E1F93D00D51139 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E92326E1F93D00D51139 /* ViewController.m */; };
 		E7E1E92726E1F93D00D51139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E1E92526E1F93D00D51139 /* Main.storyboard */; };
 		E7E1E92926E1F94500D51139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7E1E92826E1F94500D51139 /* Assets.xcassets */; };
@@ -34,15 +37,15 @@
 		E7E1E95626E1F96400D51139 /* SFSingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E94626E1F96400D51139 /* SFSingleLinkedList.m */; };
 		E7E1E95726E1F96400D51139 /* SFQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E94A26E1F96400D51139 /* SFQueue.m */; };
 		E7E1E95826E1F96400D51139 /* SFStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E94D26E1F96400D51139 /* SFStack.m */; };
-		E7E1E96626E1F96C00D51139 /* MJInorderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E95D26E1F96B00D51139 /* MJInorderPrinter.m */; };
-		E7E1E96726E1F96C00D51139 /* MJLevelOrderPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E95F26E1F96B00D51139 /* MJLevelOrderPrinter.m */; };
-		E7E1E96826E1F96C00D51139 /* MJPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E96026E1F96B00D51139 /* MJPrinter.m */; };
 		E7E1E96926E1F96C00D51139 /* MJBinaryTrees.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E96426E1F96B00D51139 /* MJBinaryTrees.m */; };
 		E7E1E96A26E1F96C00D51139 /* NSString+Trees.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E96526E1F96C00D51139 /* NSString+Trees.m */; };
 		E7E1E96D26E1F97900D51139 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E1E96C26E1F97900D51139 /* BinarySearchTree.m */; };
+		E7EA517926EF0BC7009C1D26 /* SFRedBlackTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EA517826EF0BC7009C1D26 /* SFRedBlackTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E743BC0526E5B8DF006DAF31 /* SFBinaryHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBinaryHeap.h; sourceTree = "<group>"; };
+		E743BC0626E5B8DF006DAF31 /* SFBinaryHeap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBinaryHeap.m; sourceTree = "<group>"; };
 		E74BF46726E3656C007DD5C1 /* SFSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSort.h; sourceTree = "<group>"; };
 		E74BF46826E3656C007DD5C1 /* SFSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSort.m; sourceTree = "<group>"; };
 		E74BF46A26E37225007DD5C1 /* SFBubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBubbleSort.h; sourceTree = "<group>"; };
@@ -63,11 +66,15 @@
 		E74BF48026E475AF007DD5C1 /* SFCountingSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFCountingSort.m; sourceTree = "<group>"; };
 		E74BF49726E49358007DD5C1 /* SFRadixSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFRadixSort.h; sourceTree = "<group>"; };
 		E74BF49826E49358007DD5C1 /* SFRadixSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFRadixSort.m; sourceTree = "<group>"; };
+		E7B37C6A26E5CFCF00E4407B /* MJInorderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJInorderPrinter.m; sourceTree = "<group>"; };
+		E7B37C6B26E5CFCF00E4407B /* MJInorderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJInorderPrinter.h; sourceTree = "<group>"; };
+		E7B37C6C26E5CFCF00E4407B /* MJLevelOrderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJLevelOrderPrinter.h; sourceTree = "<group>"; };
+		E7B37C6D26E5CFCF00E4407B /* MJPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPrinter.h; sourceTree = "<group>"; };
+		E7B37C6E26E5CFCF00E4407B /* MJLevelOrderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJLevelOrderPrinter.m; sourceTree = "<group>"; };
+		E7B37C6F26E5CFCF00E4407B /* MJPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPrinter.m; sourceTree = "<group>"; };
 		E7E1E91926E1F93D00D51139 /* algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E1E91C26E1F93D00D51139 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7E1E91D26E1F93D00D51139 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E7E1E91F26E1F93D00D51139 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		E7E1E92026E1F93D00D51139 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		E7E1E92226E1F93D00D51139 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E7E1E92326E1F93D00D51139 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7E1E92626E1F93D00D51139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,18 +104,14 @@
 		E7E1E94D26E1F96400D51139 /* SFStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFStack.m; sourceTree = "<group>"; };
 		E7E1E94E26E1F96400D51139 /* SFStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFStack.h; sourceTree = "<group>"; };
 		E7E1E95A26E1F96B00D51139 /* MJBinaryTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBinaryTrees.h; sourceTree = "<group>"; };
-		E7E1E95C26E1F96B00D51139 /* MJLevelOrderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJLevelOrderPrinter.h; sourceTree = "<group>"; };
-		E7E1E95D26E1F96B00D51139 /* MJInorderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJInorderPrinter.m; sourceTree = "<group>"; };
-		E7E1E95E26E1F96B00D51139 /* MJPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPrinter.h; sourceTree = "<group>"; };
-		E7E1E95F26E1F96B00D51139 /* MJLevelOrderPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJLevelOrderPrinter.m; sourceTree = "<group>"; };
-		E7E1E96026E1F96B00D51139 /* MJPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPrinter.m; sourceTree = "<group>"; };
-		E7E1E96126E1F96B00D51139 /* MJInorderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJInorderPrinter.h; sourceTree = "<group>"; };
 		E7E1E96226E1F96B00D51139 /* NSString+Trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Trees.h"; sourceTree = "<group>"; };
 		E7E1E96326E1F96B00D51139 /* MJBinaryTreeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBinaryTreeInfo.h; sourceTree = "<group>"; };
 		E7E1E96426E1F96B00D51139 /* MJBinaryTrees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBinaryTrees.m; sourceTree = "<group>"; };
 		E7E1E96526E1F96C00D51139 /* NSString+Trees.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Trees.m"; sourceTree = "<group>"; };
 		E7E1E96B26E1F97900D51139 /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
 		E7E1E96C26E1F97900D51139 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
+		E7EA517726EF0BC7009C1D26 /* SFRedBlackTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFRedBlackTree.h; sourceTree = "<group>"; };
+		E7EA517826EF0BC7009C1D26 /* SFRedBlackTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFRedBlackTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E743BC0426E5B82E006DAF31 /* BinaryHeap */ = {
+			isa = PBXGroup;
+			children = (
+				E743BC0526E5B8DF006DAF31 /* SFBinaryHeap.h */,
+				E743BC0626E5B8DF006DAF31 /* SFBinaryHeap.m */,
+			);
+			path = BinaryHeap;
+			sourceTree = "<group>";
+		};
 		E74BF46626E36534007DD5C1 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,10 +184,6 @@
 				E7E1E93526E1F96400D51139 /* OC_Algorithm */,
 				E7E1E91C26E1F93D00D51139 /* AppDelegate.h */,
 				E7E1E91D26E1F93D00D51139 /* AppDelegate.m */,
-				E7E1E91F26E1F93D00D51139 /* SceneDelegate.h */,
-				E7E1E92026E1F93D00D51139 /* SceneDelegate.m */,
-				E7E1E96B26E1F97900D51139 /* BinarySearchTree.h */,
-				E7E1E96C26E1F97900D51139 /* BinarySearchTree.m */,
 				E7E1E92226E1F93D00D51139 /* ViewController.h */,
 				E7E1E92326E1F93D00D51139 /* ViewController.m */,
 				E7E1E92526E1F93D00D51139 /* Main.storyboard */,
@@ -190,6 +198,7 @@
 		E7E1E93526E1F96400D51139 /* OC_Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				E743BC0426E5B82E006DAF31 /* BinaryHeap */,
 				E74BF46626E36534007DD5C1 /* Sort */,
 				E7E1E93626E1F96400D51139 /* Tree */,
 				E7E1E94026E1F96400D51139 /* LinkedList */,
@@ -202,15 +211,9 @@
 		E7E1E93626E1F96400D51139 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
-				E7E1E93A26E1F96400D51139 /* SFComparator.h */,
-				E7E1E93F26E1F96400D51139 /* SFBinaryTreeNode.h */,
-				E7E1E93B26E1F96400D51139 /* SFBinaryTreeNode.m */,
-				E7E1E93D26E1F96400D51139 /* SFBinaryTree.h */,
-				E7E1E93726E1F96400D51139 /* SFBinaryTree.m */,
-				E7E1E93926E1F96400D51139 /* SFBinarySearchTree.h */,
-				E7E1E93E26E1F96400D51139 /* SFBinarySearchTree.m */,
-				E7E1E93C26E1F96400D51139 /* SFAVLTree.h */,
-				E7E1E93826E1F96400D51139 /* SFAVLTree.m */,
+				E7E1E96B26E1F97900D51139 /* BinarySearchTree.h */,
+				E7E1E96C26E1F97900D51139 /* BinarySearchTree.m */,
+				E7EA517C26EF4C73009C1D26 /* Tree */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -251,11 +254,11 @@
 		E7E1E95926E1F96B00D51139 /* MJBinaryTrees */ = {
 			isa = PBXGroup;
 			children = (
-				E7E1E95A26E1F96B00D51139 /* MJBinaryTrees.h */,
-				E7E1E95B26E1F96B00D51139 /* MJPrinter */,
-				E7E1E96226E1F96B00D51139 /* NSString+Trees.h */,
 				E7E1E96326E1F96B00D51139 /* MJBinaryTreeInfo.h */,
+				E7E1E95B26E1F96B00D51139 /* MJPrinter */,
+				E7E1E95A26E1F96B00D51139 /* MJBinaryTrees.h */,
 				E7E1E96426E1F96B00D51139 /* MJBinaryTrees.m */,
+				E7E1E96226E1F96B00D51139 /* NSString+Trees.h */,
 				E7E1E96526E1F96C00D51139 /* NSString+Trees.m */,
 			);
 			path = MJBinaryTrees;
@@ -264,14 +267,32 @@
 		E7E1E95B26E1F96B00D51139 /* MJPrinter */ = {
 			isa = PBXGroup;
 			children = (
-				E7E1E95C26E1F96B00D51139 /* MJLevelOrderPrinter.h */,
-				E7E1E95D26E1F96B00D51139 /* MJInorderPrinter.m */,
-				E7E1E95E26E1F96B00D51139 /* MJPrinter.h */,
-				E7E1E95F26E1F96B00D51139 /* MJLevelOrderPrinter.m */,
-				E7E1E96026E1F96B00D51139 /* MJPrinter.m */,
-				E7E1E96126E1F96B00D51139 /* MJInorderPrinter.h */,
+				E7B37C6B26E5CFCF00E4407B /* MJInorderPrinter.h */,
+				E7B37C6A26E5CFCF00E4407B /* MJInorderPrinter.m */,
+				E7B37C6C26E5CFCF00E4407B /* MJLevelOrderPrinter.h */,
+				E7B37C6E26E5CFCF00E4407B /* MJLevelOrderPrinter.m */,
+				E7B37C6D26E5CFCF00E4407B /* MJPrinter.h */,
+				E7B37C6F26E5CFCF00E4407B /* MJPrinter.m */,
 			);
 			path = MJPrinter;
+			sourceTree = "<group>";
+		};
+		E7EA517C26EF4C73009C1D26 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				E7E1E93A26E1F96400D51139 /* SFComparator.h */,
+				E7E1E93F26E1F96400D51139 /* SFBinaryTreeNode.h */,
+				E7E1E93B26E1F96400D51139 /* SFBinaryTreeNode.m */,
+				E7E1E93D26E1F96400D51139 /* SFBinaryTree.h */,
+				E7E1E93726E1F96400D51139 /* SFBinaryTree.m */,
+				E7E1E93926E1F96400D51139 /* SFBinarySearchTree.h */,
+				E7E1E93E26E1F96400D51139 /* SFBinarySearchTree.m */,
+				E7E1E93C26E1F96400D51139 /* SFAVLTree.h */,
+				E7E1E93826E1F96400D51139 /* SFAVLTree.m */,
+				E7EA517726EF0BC7009C1D26 /* SFRedBlackTree.h */,
+				E7EA517826EF0BC7009C1D26 /* SFRedBlackTree.m */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,30 +367,31 @@
 				E74BF46F26E3839C007DD5C1 /* SFSelectionSort.m in Sources */,
 				E7E1E92426E1F93D00D51139 /* ViewController.m in Sources */,
 				E7E1E95826E1F96400D51139 /* SFStack.m in Sources */,
+				E7B37C7126E5CFD000E4407B /* MJLevelOrderPrinter.m in Sources */,
 				E7E1E95626E1F96400D51139 /* SFSingleLinkedList.m in Sources */,
 				E74BF47826E3AAC5007DD5C1 /* SFQuickSort.m in Sources */,
 				E7E1E95426E1F96400D51139 /* SFSingleCircleLinkedList.m in Sources */,
-				E7E1E96626E1F96C00D51139 /* MJInorderPrinter.m in Sources */,
 				E7E1E95526E1F96400D51139 /* SFTwowayCircleLinkedList.m in Sources */,
 				E74BF46926E3656C007DD5C1 /* SFSort.m in Sources */,
 				E74BF47226E38544007DD5C1 /* SFInsertionSort.m in Sources */,
 				E7E1E91E26E1F93D00D51139 /* AppDelegate.m in Sources */,
 				E74BF46C26E37225007DD5C1 /* SFBubbleSort.m in Sources */,
+				E7EA517926EF0BC7009C1D26 /* SFRedBlackTree.m in Sources */,
 				E7E1E95026E1F96400D51139 /* SFAVLTree.m in Sources */,
+				E7B37C7226E5CFD000E4407B /* MJPrinter.m in Sources */,
 				E7E1E96D26E1F97900D51139 /* BinarySearchTree.m in Sources */,
 				E7E1E95226E1F96400D51139 /* SFBinarySearchTree.m in Sources */,
+				E7B37C7026E5CFCF00E4407B /* MJInorderPrinter.m in Sources */,
 				E74BF48126E475AF007DD5C1 /* SFCountingSort.m in Sources */,
 				E7E1E94F26E1F96400D51139 /* SFBinaryTree.m in Sources */,
-				E7E1E96826E1F96C00D51139 /* MJPrinter.m in Sources */,
 				E74BF47B26E3BF2D007DD5C1 /* SFShellSort.m in Sources */,
 				E7E1E95326E1F96400D51139 /* SFTwowayLinkedList.m in Sources */,
 				E7E1E92F26E1F94500D51139 /* main.m in Sources */,
-				E7E1E92126E1F93D00D51139 /* SceneDelegate.m in Sources */,
 				E7E1E96A26E1F96C00D51139 /* NSString+Trees.m in Sources */,
 				E7E1E95126E1F96400D51139 /* SFBinaryTreeNode.m in Sources */,
+				E743BC0726E5B8DF006DAF31 /* SFBinaryHeap.m in Sources */,
 				E7E1E95726E1F96400D51139 /* SFQueue.m in Sources */,
 				E74BF49926E49358007DD5C1 /* SFRadixSort.m in Sources */,
-				E7E1E96726E1F96C00D51139 /* MJLevelOrderPrinter.m in Sources */,
 				E7E1E96926E1F96C00D51139 /* MJBinaryTrees.m in Sources */,
 				E74BF47E26E4734F007DD5C1 /* SFHeapSort.m in Sources */,
 				E74BF47526E395A1007DD5C1 /* SFMergeSort.m in Sources */,
@@ -518,6 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NN56R38BZT;
 				INFOPLIST_FILE = algorithm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -536,6 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NN56R38BZT;
 				INFOPLIST_FILE = algorithm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
